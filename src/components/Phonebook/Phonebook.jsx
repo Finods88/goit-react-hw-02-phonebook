@@ -17,11 +17,7 @@ class Phonebook extends Component {
 
     const dublicated = contacts.find(item => {
       const normalizedCurrentName = item.name.toLowerCase();
-
-      return (
-        normalizedCurrentName === normalizedName
-
-      );
+      return normalizedCurrentName === normalizedName;
     });
 
     return Boolean(dublicated);
